@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+  <head >
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
@@ -30,7 +30,7 @@
     
     <div class="container">
       <div class="one">
-        <h1 class="one">
+        <h1 class="one" onload="playAudio()">
           Hey
           <span id="name">Fifa</span>
         </h1>
@@ -157,6 +157,9 @@
   <script type="text/babel" src="script/main.js"></script>
 
   <script>
+
+
+
     function playAudio() {
         document.getElementById('backgroundMusic').play();
         document.body.removeAttribute('onclick');
