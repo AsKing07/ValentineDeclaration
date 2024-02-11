@@ -1,169 +1,182 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head >
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Joyeuse Saint Valentin :)</title>
-    <link
-      rel="stylesheet"
-    />
-    <link rel="shortcut icon" type="image/png" href="./img/heart.svg" />
-    <link rel="stylesheet" href="style/style.css" />
-  </head>
 
-  <body onclick="playAudio()"  >
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Joyeuse Saint Valentin :)</title>
+  <link rel="shortcut icon" type="image/png" href="./img/heart.svg" />
+  <link rel="stylesheet" href="style/style.css" />
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css'>
+</head>
 
-    <!-- <audio id="backgroundMusic" autoplay="true" loop="true" volume="0.9">
-      <source src="song.mp3" type="audio/mpeg">
-     
-    </audio> -->
+<body>
 
-    
-
-    <audio id="backgroundMusic" autoplay loop>
-
+  <audio id="backgroundMusic" >
       <source src="song.mp3" type="audio/mp3">
+     
     </audio>
-   
 
+
+    <button onclick="playAudio()" id="button">
+      <i class="fas fa-volume-up"></i>
+    </button>
+  
+
+
+
+  <div class="container">
     
-    <div class="container">
-      <div class="one">
-        <h1 class="one" onload="playAudio()">
-          Hey
-          <span id="name">Fifa</span>
-        </h1>
-        <p class="two" id="greetingText">D'ailleurs j'aime particulièrement ce prénom là comparativement à tes autres prénoms !</p>
-      </div>
-      <div class="three">
-        <p>C'est la Saint Valentin !!! 🙃</p>
-      </div>
-      <div class="four">
-        <div class="text-box">
-          <p class="hbd-chatbox">
-           Joyeuse saint Valentin!!! Je t'aime et bla bla...
-          </p>
-          <p class="fake-btn">Envoyer</p>
-        </div>
-      </div>
-      <div class="five">
-        <p class="idea-1">C'est ce que j'allais faire.</p>
-        <p class="idea-2">Mais ensuite j'ai arrêté.</p>
-        <p class="idea-3">
-         J'ai réalisé que je voulais faire quelque chose de <strong>speciale</strong>.
+
+
+    <div class="one">
+      <h1 class="one">
+        Hey
+        <span id="name">Fifa</span>
+      </h1>
+      <p class="two" id="greetingText">D'ailleurs j'aime particulièrement ce prénom là comparativement à tes autres
+        prénoms !</p>
+    </div>
+    <div class="three">
+      <p>C'est la Saint Valentin !!! 🙃</p>
+    </div>
+    <div class="four">
+      <div class="text-box">
+        <p class="hbd-chatbox">
+          Joyeuse saint Valentin!!! Je t'aime et bla bla...
         </p>
-        <p class="idea-4">Parce que,</p>
-        <p class="idea-5">
-          Tu es spéciale
-          <span>:)</span>
-        </p>
-        <p class="idea-6">
-          <span>A</span>
-          <span>L</span>
-          <span>O</span>
-          <span>R</span>
-          <span>S</span>
-        </p>
+        <p class="fake-btn">Envoyer</p>
       </div>
-      <div class="six">
-        <img src="img/vector.jpg" alt="" class = "girl-dp" id="imagePath" />
-        <div class="wish">
-          <h3 class="wish-hbd">Joyeuse  Saint  Valentin  Ma  Belle</h3>
-          <h5 id="wishText"></h5>
-        </div>
+    </div>
+    <div class="five">
+      <p class="idea-1">C'est ce que j'allais faire.</p>
+      <p class="idea-2">Mais ensuite j'ai arrêté.</p>
+      <p class="idea-3">
+        J'ai réalisé que je voulais faire quelque chose de <strong>speciale</strong>.
+      </p>
+      <p class="idea-4">Parce que,</p>
+      <p class="idea-5">
+        Tu es spéciale
+        <span>:)</span>
+      </p>
+      <p class="idea-6">
+        <span>A</span>
+        <span>L</span>
+        <span>O</span>
+        <span>R</span>
+        <span>S</span>
+      </p>
+    </div>
+    <div class="six">
+      <img src="img/vector.jpg" alt="" class="girl-dp" id="imagePath" />
+      <div class="wish">
+        <h3 class="wish-hbd">Joyeuse Saint Valentin Ma Belle</h3>
+        <h5 id="wishText"></h5>
       </div>
-      <div class="seven">
-        <div class="baloons">
-          <img src="img/balloon.svg" alt="" />
-          <!-- <img src="img/music-note.svg" alt="" /> -->
-          <img src="img/smiling.svg" />
-          <img src="img/heart.svg" />
-          <!-- <img src="img/happy.svg" alt="" /> -->
-          <img src="img/balloon.svg" alt="" />
-          <!-- <img src="img/music-note.svg" alt="" /> -->
-          <!-- <img src="img/smiling.svg" /> -->
-          <img src="img/heart.svg" />
-          <img src="img/balloon.svg" alt="" />
-          <img src="img/music-note.svg" alt="" />
-          <img src="img/heart.svg" />
-          <img src="img/balloon.svg" alt="" />
-          <!-- <img src="img/music-note.svg" alt="" /> -->
-          <!-- <img src="img/smiling.svg" /> -->
-          
-          <img src="img/heart.svg" />
-          <img src="img/balloon.svg" alt="" />
-          <img src="img/heart.svg" />
-          <img src="img/heart.svg" />
-          <img src="img/music-note.svg" alt="" />
-          <img src="img/smiling.svg" />
-         
-          <img src="img/happy.svg" alt="" />
-          <img src="img/balloon.svg" alt="" />
-          <img src="img/heart.svg" />
-          <!-- <img src="img/music-note.svg" alt="" /> -->
-          <!-- <img src="img/heart.svg" />
+    </div>
+    <div class="seven">
+      <div class="baloons">
+        <img src="img/balloon.svg" alt="" />
+        <!-- <img src="img/music-note.svg" alt="" /> -->
+        <img src="img/smiling.svg" />
+        <img src="img/heart.svg" />
+        <!-- <img src="img/happy.svg" alt="" /> -->
+        <img src="img/balloon.svg" alt="" />
+        <!-- <img src="img/music-note.svg" alt="" /> -->
+        <!-- <img src="img/smiling.svg" /> -->
+        <img src="img/heart.svg" />
+        <img src="img/balloon.svg" alt="" />
+        <img src="img/music-note.svg" alt="" />
+        <img src="img/heart.svg" />
+        <img src="img/balloon.svg" alt="" />
+        <!-- <img src="img/music-note.svg" alt="" /> -->
+        <!-- <img src="img/smiling.svg" /> -->
+
+        <img src="img/heart.svg" />
+        <img src="img/balloon.svg" alt="" />
+        <img src="img/heart.svg" />
+        <img src="img/heart.svg" />
+        <img src="img/music-note.svg" alt="" />
+        <img src="img/smiling.svg" />
+
+        <img src="img/happy.svg" alt="" />
+        <img src="img/balloon.svg" alt="" />
+        <img src="img/heart.svg" />
+        <!-- <img src="img/music-note.svg" alt="" /> -->
+        <!-- <img src="img/heart.svg" />
           
           <img src="img/happy.svg" alt="" />
           <img src="img/balloon.svg" alt="" />
           <img src="img/music-note.svg" alt="" /> -->
-          <img src="img/smiling.svg" />
-          <!-- <img src="img/heart.svg" /> -->
-          <!-- <img src="img/happy.svg" alt="" /> -->
-        </div>
-      </div>
-      <div class="eight">
-        <svg viewBox="0 0 40 40" xmlnssvg/heart.svg.org/2000/svg">
-        <circle cx="20" cy="20" r="20" />
-      </svg>
-        <svg viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
-          <circle cx="20" cy="20" r="20" />
-        </svg>
-        <svg viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
-          <circle cx="20" cy="20" r="20" />
-        </svg>
-        <svg viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
-          <circle cx="20" cy="20" r="20" />
-        </svg>
-        <svg viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
-          <circle cx="20" cy="20" r="20" />
-        </svg>
-        <svg viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
-          <circle cx="20" cy="20" r="20" />
-        </svg>
-        <svg viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
-          <circle cx="20" cy="20" r="20" />
-        </svg>
-        <svg viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
-          <circle cx="20" cy="20" r="20" />
-        </svg>
-        <svg viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
-          <circle cx="20" cy="20" r="20" />
-        </svg>
-      </div>
-      <div class="nine">
-        <p>J'espère que tu as apprécié ma surprise!</p>
-        <p id="replay">Clique si tu souhaites revoir.</p>
-        <p class="last-smile">:)</p>
+        <img src="img/smiling.svg" />
+        <!-- <img src="img/heart.svg" /> -->
+        <!-- <img src="img/happy.svg" alt="" /> -->
       </div>
     </div>
-
-  
-
-  </body>
+    <div class="eight">
+      <svg viewBox="0 0 40 40" xmlnssvg/heart.svg.org/2000/svg">
+        <circle cx="20" cy="20" r="20" />
+      </svg>
+      <svg viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="20" cy="20" r="20" />
+      </svg>
+      <svg viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="20" cy="20" r="20" />
+      </svg>
+      <svg viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="20" cy="20" r="20" />
+      </svg>
+      <svg viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="20" cy="20" r="20" />
+      </svg>
+      <svg viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="20" cy="20" r="20" />
+      </svg>
+      <svg viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="20" cy="20" r="20" />
+      </svg>
+      <svg viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="20" cy="20" r="20" />
+      </svg>
+      <svg viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="20" cy="20" r="20" />
+      </svg>
+    </div>
+    <div class="nine">
+      <p>J'espère que tu as apprécié ma surprise!</p>
+      <p id="replay">Clique si tu souhaites revoir.</p>
+      <p class="last-smile">:)</p>
+    </div>
+  </div>
 
   <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.3/TweenMax.min.js"></script>
-  <script type="text/babel" src="script/main.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.3/TweenMax.min.js"></script>
+<script type="text/babel" src="script/main.js"></script>
+<script>
+  const playAudio = () => {
+  const icon = document.querySelector("#button > i");
+  const audio = document.getElementById('backgroundMusic');
+  
+  if (audio.paused) {
+    audio.volume = 0.2;
+    audio.play();
+    icon.classList.remove('fa-volume-up');
+    icon.classList.add('fa-volume-mute');
+  } else {
+    audio.pause();
+    icon.classList.remove('fa-volume-mute');
+    icon.classList.add('fa-volume-up');
+  }
+}
 
-  <script>
-
-
-
-    function playAudio() {
-        document.getElementById('backgroundMusic').play();
-        document.body.removeAttribute('onclick');
-        document.body.removeAttribute('ontouchstart');
-    }
 </script>
+
+
+</body>
+
+
+
+
+
 </html>
