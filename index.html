@@ -11,23 +11,24 @@
   <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css'>
 </head>
 
-<body>
-
-  <audio id="backgroundMusic" >
-      <source src="song.mp3" type="audio/mp3">
-     
-    </audio>
+<body >
 
 
-    <button onclick="playAudio()" id="button">
-      <i class="fas fa-volume-up"></i>
-    </button>
-  
-
-
+   
 
   <div class="container">
     
+    
+  <audio id="backgroundMusic" loop >
+    <source src="song.mp3" type="audio/mp3">
+   
+  </audio>
+
+
+  <button onclick="playAudio()" id="button">
+    <i class="fas fa-volume-up"></i>
+  </button>
+
 
 
     <div class="one">
@@ -150,10 +151,12 @@
     </div>
   </div>
 
-  <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+<script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.3/TweenMax.min.js"></script>
 <script type="text/babel" src="script/main.js"></script>
 <script>
+
+  
   const playAudio = () => {
   const icon = document.querySelector("#button > i");
   const audio = document.getElementById('backgroundMusic');
