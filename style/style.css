@@ -16,6 +16,10 @@ body {
   position: relative;
   overflow-y: auto;
   overflow-x: hidden;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
 }
 
 /* Hide the scrollbar */
@@ -247,7 +251,7 @@ body {
 
 button {
   display: flex;
-  
+
   flex-direction: column;
   justify-content: center;
   text-align: center;
