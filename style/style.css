@@ -14,7 +14,18 @@ body {
   text-align: center;
   visibility: hidden;
   position: relative;
-  overflow: hidden;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+/* Hide the scrollbar */
+.container::-webkit-scrollbar {
+  display: none; /* For Chrome, Safari, and Opera */
+}
+
+.container {
+  -ms-overflow-style: none; /* For Internet Explorer and Edge */
+  scrollbar-width: none; /* For Firefox */
 }
 
 .container div.six {
@@ -224,7 +235,7 @@ body {
 }
 
 .nine p {
-  font-size: 2rem;
+  font-size: 1.2rem;
   font-weight: lighter;
 }
 
@@ -235,13 +246,19 @@ body {
 
 
 button {
-  font-size: 16px;
+  display: flex;
+  
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  font-size: 20px;
   color: #eee;
   position: absolute;
   top:  10%;
   left: 10%;
   transform: translate(-50%, -50%);
-  width: 50px;
+  width: fit-content;
   padding: 15px;
   border: none;
   border-radius: 2px;
@@ -252,6 +269,18 @@ button {
   cursor: pointer;
   transition: all 0.4s ease-out;
   z-index: 4;
+}
+
+
+button i{
+  justify-content: center;
+  align-items: center;
+  justify-self: center;
+}
+
+button p {
+  text-align: center;
+
 }
 
 
@@ -329,7 +358,7 @@ button.fade:hover {
   }
 
   .nine p {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     font-weight: lighter;
   }
 }

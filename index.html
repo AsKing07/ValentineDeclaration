@@ -25,8 +25,9 @@
   </audio>
 
 
-  <button onclick="playAudio()" id="button">
-    <i class="fas fa-volume-up"></i>
+  <button onclick="playAudio()" id="button" title="Toggle Audio">
+    <i class="fas fa-play"></i>
+    <p>Joue moi</p>
   </button>
 
 
@@ -66,7 +67,7 @@
       </p>
     </div>
     <div class="six">
-      <img src="img/vector.jpg" alt="" class="girl-dp" id="imagePath" />
+      <img src="img/image.jpg" alt="" class="girl-dp" id="imagePath" />
       <div class="wish">
         <h3 class="wish-hbd">Happy Valentine's Day my beautiful</h3>
         <h5 id="wishText"></h5>
@@ -76,37 +77,37 @@
       <div class="baloons">
         <img src="img/balloon.svg" alt="" />
         <!-- <img src="img/music-note.svg" alt="" /> -->
-        <img src="img/smiling.svg" />
-        <img src="img/heart.svg" />
+        <img alt="" src="img/smiling.svg" />
+        <img alt="" src="img/heart.svg" />
         <!-- <img src="img/happy.svg" alt="" /> -->
         <img src="img/balloon.svg" alt="" />
         <!-- <img src="img/music-note.svg" alt="" /> -->
         <!-- <img src="img/smiling.svg" /> -->
-        <img src="img/heart.svg" />
+        <img alt="" src="img/heart.svg" />
         <img src="img/balloon.svg" alt="" />
         <img src="img/music-note.svg" alt="" />
-        <img src="img/heart.svg" />
+        <img alt="" src="img/heart.svg" />
         <img src="img/balloon.svg" alt="" />
         <!-- <img src="img/music-note.svg" alt="" /> -->
         <!-- <img src="img/smiling.svg" /> -->
 
-        <img src="img/heart.svg" />
-        <img src="img/balloon.svg" alt="" />
-        <img src="img/heart.svg" />
-        <img src="img/heart.svg" />
+        <img alt="" src="img/heart.svg" />
+        <img alt="" src="img/balloon.svg" alt="" />
+        <img alt="" src="img/heart.svg" />
+        <img alt="" src="img/heart.svg" />
         <img src="img/music-note.svg" alt="" />
-        <img src="img/smiling.svg" />
+        <img alt="" src="img/smiling.svg" />
 
         <img src="img/happy.svg" alt="" />
         <img src="img/balloon.svg" alt="" />
-        <img src="img/heart.svg" />
+        <img alt="" src="img/heart.svg" />
         <!-- <img src="img/music-note.svg" alt="" /> -->
         <!-- <img src="img/heart.svg" />
           
           <img src="img/happy.svg" alt="" />
           <img src="img/balloon.svg" alt="" />
           <img src="img/music-note.svg" alt="" /> -->
-        <img src="img/smiling.svg" />
+        <img alt="" src="img/smiling.svg" />
         <!-- <img src="img/heart.svg" /> -->
         <!-- <img src="img/happy.svg" alt="" /> -->
       </div>
@@ -141,15 +142,22 @@
       </svg>
     </div>
     <div class="nine">
-      <p>J'espère que tu as apprécié ma surprise!</p>
-      <p id="replay">Clique si tu souhaites revoir.</p>
+      <p>
+        On this Valentine's Day, I want to express my love for you, although words seem insufficient. Your presence, your smile and your laughter brighten my days. I want you to realize how precious you are to me, because you are a woman full of values, sweetness and light. Your support and tenderness remind me of your importance in my life.
+
+        I am not afraid to project myself with you, because I know that you bring me so much. In your arms, I find refuge and feeling, and your heart beating against mine reminds me how essential you are. Love is an adventure without a guide, where we learn to grow together, to fall and get up again.
+        
+        With you, I discovered a world where our imperfections make our story unique. You make me feel alive and complete. On this special day, I just want to tell you that despite the distance, I love you infinitely and I look forward to the day I can hold you in my arms again and the days I can wake up next to you every morning. ❤️
+      </p>
+      <p>I hope you enjoyed my surprise!</p>
+      <p id="replay">Click here if you want to see again.</p>
       <p class="last-smile">:)</p>
     </div>
   </div>
 
 <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.3/TweenMax.min.js"></script>
-<script type="text/babel" src="script/main.js"></script>
+<script  src="./script/main.js"></script>
 <script>
 
   
@@ -158,16 +166,33 @@
   const audio = document.getElementById('backgroundMusic');
   
   if (audio.paused) {
-    audio.volume = 0.2;
+    audio.volume = 1;
     audio.play();
-    icon.classList.remove('fa-volume-up');
-    icon.classList.add('fa-volume-mute');
+    icon.classList.remove('fa-play');
+    icon.classList.add('fa-pause');
   } else {
     audio.pause();
-    icon.classList.remove('fa-volume-mute');
-    icon.classList.add('fa-volume-up');
+    icon.classList.remove('fa-pause');
+    icon.classList.add('fa-play');
   }
 }
+
+document.addEventListener("DOMContentLoaded", () => {
+  const audio = document.getElementById("backgroundMusic");
+
+  // Essayer de jouer l'audio automatiquement
+  audio.play().then((result) => {
+    audio.volume = 1;
+    icon.classList.remove('fa-play');
+    icon.classList.add('fa-pause');
+    
+  }).catch((err) => {
+    console.log("Lecture automatique bloquée par le navigateur. Attente d'une interaction.");
+    
+  }); 
+});
+
+
 
 </script>
 
